@@ -11,7 +11,7 @@ http://www.gnu.org/licenses/gpl.html
 
 Note: some of the screenshots contained in this software may show content owned by EducaPoker, and may be under their own licenses.
 This GPL license applies to the code, the software and all the images that aren't property of EducaPoker.
- */
+*/
 
 
 import java.awt.EventQueue;
@@ -92,8 +92,11 @@ public class Rangos {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		frmRangosDiplomado = new JFrame("Rangos Diplomado 6.1");
-		frmRangosDiplomado.setMinimumSize(new Dimension(1280, 720));
+		frmRangosDiplomado = new JFrame("Visor de Rangos 6.1");
+		frmRangosDiplomado.setMinimumSize(new Dimension(1024, 600));
+		frmRangosDiplomado.setPreferredSize(new Dimension(1280, 720));
+		//Tamaño que tendrá la ventana cuando quitemos el maximizado (setPreferredSize no lo aplica):
+		frmRangosDiplomado.setSize(1280, 720);
 		frmRangosDiplomado.setExtendedState(JFrame.MAXIMIZED_BOTH);
 		frmRangosDiplomado.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmRangosDiplomado.getContentPane().setLayout(new GridBagLayout());
